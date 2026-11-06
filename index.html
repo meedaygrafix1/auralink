@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auralink — Hear every detail. Live fully.</title>
+  <meta name="description" content="Meet Auralink. Intelligent hearing that adapts to your world, so you can be part of every moment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="interactions.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a class="logo" href="#" aria-label="Auralink home">
+      <img src="assets/logo-earbud.svg" width="34" height="34" alt="" />
+      <span>Auralink</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#features">Our solutions</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#company">Company</a>
+    </nav>
+    <a class="btn nav-cta" href="#get-started"><span class="btn-pill" aria-hidden="true"></span><span class="btn-label">Get started</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span>
+    </button>
+  </header>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="#features">Our solutions</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#company">Company</a>
+    <a class="btn" href="#get-started"><span class="btn-pill" aria-hidden="true"></span><span class="btn-label">Get started</span></a>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="display display-hero split-lines"><span class="line"><span>Hear every</span></span><span class="line"><span>detail.</span></span><span class="line"><span>Live fully.</span></span></h1>
+        <p class="lead">Meet Auralink. Intelligent hearing that adapts to your world, so you can be part of every moment.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#get-started"><span class="btn-pill" aria-hidden="true"></span><span class="btn-label">Get Auralink</span></a>
+          <a class="link-arrow" href="#demo">
+            Book a demo
+            <img src="assets/arrow.svg" width="20" height="20" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="hero-media hero-shape">
+        <!-- Abstract hero: morphing blob + sound-wave rings + glowing curve (echoes the device's light strip) -->
+        <svg viewBox="0 0 552 706" width="552" height="706" aria-hidden="true" focusable="false">
+          <defs>
+            <radialGradient id="blob-fill" cx="36%" cy="30%" r="80%" fx="30%" fy="22%">
+              <stop offset="0%" stop-color="#5c5c5c" />
+              <stop offset="38%" stop-color="#1c1c1c" />
+              <stop offset="100%" stop-color="#000" />
+            </radialGradient>
+            <radialGradient id="blob-sheen" cx="34%" cy="24%" r="30%">
+              <stop offset="0%" stop-color="#fff" stop-opacity=".28" />
+              <stop offset="100%" stop-color="#fff" stop-opacity="0" />
+            </radialGradient>
+            <linearGradient id="glow-line" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#9ff3ff" />
+              <stop offset="55%" stop-color="#38d9ff" />
+              <stop offset="100%" stop-color="#0aa6d6" />
+            </linearGradient>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="9" result="blur" />
+              <feMerge><feMergeNode in="blur" /><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+            </filter>
+            <filter id="shadow" x="-40%" y="-300%" width="180%" height="700%">
+              <feGaussianBlur stdDeviation="22" />
+            </filter>
+          </defs>
+
+          <!-- Sound-wave rings -->
+          <g class="rings" fill="none" stroke="#000" stroke-width="1.5">
+            <circle cx="276" cy="353" r="230" opacity="0">
+              <animate attributeName="r" values="230;290" dur="4.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" values=".35;0" dur="4.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="276" cy="353" r="230" opacity="0">
+              <animate attributeName="r" values="230;290" dur="4.5s" begin="1.5s" repeatCount="indefinite" />
+              <animate attributeName="opacity" values=".35;0" dur="4.5s" begin="1.5s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="276" cy="353" r="230" opacity="0">
+              <animate attributeName="r" values="230;290" dur="4.5s" begin="3s" repeatCount="indefinite" />
+              <animate attributeName="opacity" values=".35;0" dur="4.5s" begin="3s" repeatCount="indefinite" />
+            </circle>
+          </g>
+
+          <!-- Soft floor shadow -->
+          <ellipse cx="276" cy="648" rx="170" ry="18" fill="#000" opacity=".22" filter="url(#shadow)" />
+
+          <!-- Morphing blob -->
+          <path fill="url(#blob-fill)"
+                d="M276,90 C420,90 500,220 490,350 C480,500 400,620 270,615 C140,610 60,500 65,350 C70,200 140,90 276,90 Z">
+            <animate attributeName="d" dur="14s" repeatCount="indefinite" calcMode="spline"
+                     keySplines=".45 0 .55 1; .45 0 .55 1; .45 0 .55 1" keyTimes="0; .33; .66; 1"
+                     values="M276,90 C420,90 500,220 490,350 C480,500 400,620 270,615 C140,610 60,500 65,350 C70,200 140,90 276,90 Z;
+                             M290,100 C430,120 520,240 485,380 C455,520 380,630 255,600 C130,575 55,470 75,330 C95,190 160,85 290,100 Z;
+                             M265,85 C400,70 480,200 500,340 C515,490 420,600 285,620 C150,640 70,520 60,370 C50,220 130,100 265,85 Z;
+                             M276,90 C420,90 500,220 490,350 C480,500 400,620 270,615 C140,610 60,500 65,350 C70,200 140,90 276,90 Z" />
+          </path>
+          <ellipse cx="205" cy="200" rx="150" ry="120" fill="url(#blob-sheen)" />
+
+          <!-- Glowing light curve -->
+          <path class="light-curve" fill="none" stroke="url(#glow-line)" stroke-width="7" stroke-linecap="round" filter="url(#glow)"
+                d="M228,196 C350,232 352,330 282,372 C214,412 222,492 330,526">
+            <animate attributeName="opacity" values="1;.55;1" dur="3.2s" repeatCount="indefinite" />
+          </path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits" aria-label="Benefits">
+      <div class="benefit">
+        <img src="assets/icon-adaptive.svg" width="30" height="30" alt="" />
+        <span>Adaptive audio</span>
+      </div>
+      <div class="benefit">
+        <img src="assets/icon-app.svg" width="30" height="30" alt="" />
+        <span>App-connected</span>
+      </div>
+      <div class="benefit">
+        <img src="assets/icon-everyday.svg" width="30" height="30" alt="" />
+        <span>Made for everyday</span>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features" id="features">
+      <div class="intro intro-features">
+        <h2 class="display display-xl">Small device.<br />Big difference.</h2>
+        <p class="lead">Designed with precision. Powered by AI. Built to fit into your everyday life.</p>
+      </div>
+      <div class="product-features">
+        <figure class="product-stage">
+          <img src="assets/product-three-quarter.png" alt="Auralink device, three-quarter studio view" />
+          <figcaption>Designed around you.</figcaption>
+        </figure>
+        <div class="feature-grid">
+          <article class="feature">
+            <h3>Adaptive sound</h3>
+            <p>Real-time environment detection for clear audio, whether in a crowd or on a call.</p>
+          </article>
+          <article class="feature">
+            <h3>AI noise filtering</h3>
+            <p>Machine learning filters background noise and brings voices into focus.</p>
+          </article>
+          <article class="feature">
+            <h3>Your sound. Your app.</h3>
+            <p>Personalize your hearing profiles with the Auralink app for iOS and Android.</p>
+          </article>
+          <article class="feature">
+            <h3>Discreet by design</h3>
+            <p>Minimal, comfortable and designed to look as good as it sounds.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo -->
+    <section class="section demo" id="demo">
+      <div class="intro intro-demo">
+        <h2 class="display display-demo">See it<br />in action.</h2>
+        <p class="lead">Take a closer look at the device, the smart features and the everyday experience.</p>
+      </div>
+      <div class="demo-media">
+        <img src="assets/cafe-conversation.png" alt="Two people talking in a café, one wearing Auralink" />
+        <button class="play" type="button" aria-label="Play the Auralink demo" data-open-demo>
+          <img src="assets/play.svg" width="36" height="36" alt="" />
+        </button>
+      </div>
+      <button class="demo-cta" type="button" data-open-demo>
+        <span class="demo-cta-play">
+          <img src="assets/play.svg" width="36" height="36" alt="" />
+        </span>
+        <span class="demo-cta-text">
+          <strong>Watch the Auralink demo</strong>
+          <span>The device, the app and the everyday experience</span>
+        </span>
+        <span class="demo-cta-arrow">
+          <img src="assets/open-demo.svg" width="24" height="24" alt="" />
+        </span>
+      </button>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+      <div class="intro intro-community">
+        <h2 class="display display-xl">Life sounds<br />better together.</h2>
+        <p class="lead">The moments that matter, in the words of people using Auralink.</p>
+      </div>
+      <div class="testimonial-list">
+        <figure class="testimonial">
+          <blockquote>“This changed my life. Conversations are finally effortless.”</blockquote>
+          <figcaption>
+            <img src="assets/avatar-michael.png" width="52" height="52" alt="" />
+            <span>Michael O., 48</span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial">
+          <blockquote>“I’ve tried several hearing aids over the years, but Auralink is in a class of its own. It feels like I got my ears back!”</blockquote>
+          <figcaption>
+            <img src="assets/avatar-john.png" width="52" height="52" alt="" />
+            <span>John M., 62</span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial">
+          <blockquote>“Crystal-clear sound and no more awkward whistling noises. I love how I can fine-tune everything from my phone.”</blockquote>
+          <figcaption>
+            <img src="assets/avatar-emeka.png" width="52" height="52" alt="" />
+            <span>Emeka A., 54</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="pricing">
+      <div class="faq-intro">
+        <h2 class="display display-xl">Good<br />questions.</h2>
+        <p class="lead">A little clarity before your next step.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-row">
+          <summary>Is this covered by insurance?<img src="assets/expand.svg" width="24" height="24" alt="" /></summary>
+          <p>Many insurance plans cover part of the cost of hearing devices. Our team can help you check your coverage before you buy.</p>
+        </details>
+        <details class="faq-row">
+          <summary>Can I use it with my phone?<img src="assets/expand.svg" width="24" height="24" alt="" /></summary>
+          <p>Yes. Auralink pairs with iOS and Android, and the Auralink app lets you fine-tune your hearing profiles.</p>
+        </details>
+        <details class="faq-row">
+          <summary>How long is the warranty?<img src="assets/expand.svg" width="24" height="24" alt="" /></summary>
+          <p>Every Auralink device comes with a limited warranty covering manufacturing defects.</p>
+        </details>
+        <details class="faq-row">
+          <summary>What’s the return policy?<img src="assets/expand.svg" width="24" height="24" alt="" /></summary>
+          <p>If Auralink isn’t right for you, you can return it within the trial period for a full refund.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="section cta" id="get-started">
+      <div class="cta-content">
+        <h2 class="display display-cta">Ready to hear<br />the difference?</h2>
+        <p class="lead lead-dark">Discover how Auralink fits into your world.</p>
+        <a class="btn" href="#get-started"><span class="btn-pill" aria-hidden="true"></span><span class="btn-label">Get Auralink</span></a>
+      </div>
+      <div class="cta-media">
+        <img src="assets/product-hand-held.png" alt="Auralink device held in a hand" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="company">
+    <div class="footer-nav">
+      <a class="footer-email" href="mailto:hello@auralink.ai">hello@auralink.ai</a>
+      <div class="footer-links">
+        <a href="#">X / Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms of use</a>
+      </div>
+    </div>
+    <!-- data-stretch: index of the letter that stretches to fill the width (0 = first letter) -->
+    <p class="footer-wordmark" aria-hidden="true" data-stretch="3">Auralink.</p>
+    <div class="footer-bottom">
+      <span>© 2026 Auralink Technologies</span>
+      <strong>YOUR HEARING. OUR TECH.</strong>
+    </div>
+  </footer>
+
+  <!-- Demo video dialog. Set data-video-src to a video URL to play it. -->
+  <dialog class="demo-dialog" id="demo-dialog" data-video-src="" aria-label="Auralink demo">
+    <button class="dialog-close" type="button" aria-label="Close demo">×</button>
+    <div class="dialog-body">
+      <div class="dialog-placeholder">
+        <img src="assets/cafe-conversation.png" alt="" />
+        <p>The full Auralink demo is coming soon.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
